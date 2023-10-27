@@ -37,6 +37,7 @@
     animation-name: movimiento;
     animation-duration: 50s;
     animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 @keyframes movimiento {
