@@ -9,6 +9,14 @@
     justify-content: end;
 }
 
+
+.navbar-brand{
+    text-decoration: none;
+}
+.navbar-brand:hover{
+    transition: .4s; 
+    color: #EEFF0D;
+}
 .bloque-encabezado {
     position: relative;
     width: 100%;
@@ -25,7 +33,20 @@
     height: 100%;
     background-color: white;
     background-size: cover;
-    background-position: center;
+    background-position: left;
+    animation-name: movimiento;
+    animation-duration: 50s;
+    animation-direction: alternate;
+}
+
+@keyframes movimiento {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }
 
 .bloque-encabezado .fondo-oscuro {
@@ -260,7 +281,7 @@ footer {
     font-size: .8em;
 }
 
-.bloque-carrusel{
+.bloque-carrusel {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
@@ -270,7 +291,7 @@ footer {
     background-color: #F3FFC1;
 }
 
-.bloque-carrusel img{
+.bloque-carrusel img {
     width: 100%;
     height: 50vh;
     background-position: center;
@@ -289,9 +310,10 @@ footer {
 
 
 
-    .bloque-nosotros .nosotros-imagen{
+    .bloque-nosotros .nosotros-imagen {
         width: 60%;
     }
+
     .bloque-nosotros p {
         width: 60%;
     }
@@ -311,7 +333,7 @@ footer {
     }
 
 
-    .bloque-carrusel img{
+    .bloque-carrusel img {
         height: 70vh;
     }
 }
